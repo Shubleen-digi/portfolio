@@ -1,0 +1,423 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+/* Header Section */
+header {
+    width: 100vw;
+    color: white;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: white;
+}
+* {
+
+    box-sizing: border-box;
+
+  }
+.navbar .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+.nav-links-mobile {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;* {
+
+        box-sizing: border-box;
+    
+      }
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+}
+
+@media (max-width: 1199px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: #ff3b2f;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.services, .pricing, .team, .contact {
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 5px;
+    display: block;
+}
+
+.card i {
+    font-size: 2rem;
+    color: #ff6f61;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+.btn.hover{
+  color: #661e1b;
+  background-color: #ccc;
+}
+.imag{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    margin-top: 20px;
+   
+}
+a{
+    color: #f4f4f4;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #ff3b2f;
+}/* Media Query for Mobile */
+@media (max-width: 767px) {
+    .nav-links {
+        display: none;
+        /* flex-direction: column;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px; */
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: #ff3b2f;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.services, .pricing, .team, .contact {
+    margin-bottom: 40px;
+}
+    .hero {
+        text-align: center;
+        padding: 100px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .cta-button {
+        background-color: #ff6f61;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .hero .cta-button:hover {
+        background-color: #ff3b2f;
+    }
+    
+    /* Main Content */
+    main {
+        padding: 40px 20px;
+    }
+    
+    .services, .pricing, .team, .contact {
+        margin-bottom: 40px;
+    }
+    
+    .service-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .card {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        width: 200px;
+        margin-top: 5px;
+        display: block;
+    }
+    
+    .card i {
+        font-size: 2rem;
+        color: #ff6f61;
+    }
+    
+    .card h3 {
+        margin: 10px 0;
+    }
+    .btn.hover{
+      color: #661e1b;
+      background-color: #ccc;
+    }
+    .imag{
+        width: 300px;
+        height: 300px;
+        margin: 15px;
+        margin-top: 20px;
+       
+    }
+    a{
+        color: #f4f4f4;
+    }
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .contact input, .contact textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }/* Media Query for Mobile */
+@media (max-width: 1199px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: #ff3b2f;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.services, .pricing, .team, .contact {
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 5px;
+    display: block;
+}
+
+.card i {
+    font-size: 2rem;
+    color: #ff6f61;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+.btn.hover{
+  color: #661e1b;
+  background-color: #ccc;
+}
+.imag{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    margin-top: 20px;
+   
+}
+a{
+    color: #f4f4f4;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #ff3b2f;
+}

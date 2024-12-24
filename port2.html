@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+     <header>
+         <nav class="navbar">
+        <div class="logo">
+            <a href="https://www.canva.com/">My Website</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="hamburger" id="hamburger-menu">
+            <ul class="nav-links-mobile">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+    </nav>
+</header>
+        <section class="hero">
+            <h1>Portfolio</h1>
+            <p>Showcasing skills and work</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2 Align="center">Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and functional websites.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Designing mobile applications for iOS and Android.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable solutions for businesses of all sizes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team">
+            <h2>Meet the Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300" alt="Team Member 1" class="imag">
+                    <h3>Sachin Khosla</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300" alt="Team Member 2" class="imag">
+                    <h3>Mayank Sethi</h3>
+                    <p>Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300" alt="Team Member 3" class="imag">
+                    <h3>Anurag thakur</h3>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook">facebook</i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter">twitter</i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-linkedin">linkedin</i></a>
+        </div>
+        <br>
+        <div class="quick-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Sitemap</a>
+        </div>
+        <p>&copy; 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="scripts.js"></script>
+</body>
+</html>
